@@ -1,0 +1,14 @@
+<form [formGroup]="user">
+    <label>
+        <span>Endereço de E-mail</span>
+        <input type="email" placeholder="Seu endereço e-mail" formControlName="email">
+    </label>
+
+    <label>
+        <span>Confirmação de  email</span>
+        <input type="email" placeholder="Confirm your email address" formControlName="confirm">
+    </label>
+
+    É igual: {{igual |json }} ?
+    <button type="submit" (click)="isEqual()">Assinar</button>
+</form>

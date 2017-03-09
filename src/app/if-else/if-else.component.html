@@ -1,0 +1,5 @@
+<ng-template #loading>Carregando...</ng-template>
+
+<div *ngIf="nome | async; else loading; let usuario">
+  {{ usuario }}
+</div>
